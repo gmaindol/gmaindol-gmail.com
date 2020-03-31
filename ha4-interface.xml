@@ -1,0 +1,3 @@
+<port>{{ ha4_ethernet_interface }}</port>
+      <ip-address>{{ha4ipaddress }}</ip-address>
+      <netmask>{{ ha4netmask }}</netmask>
