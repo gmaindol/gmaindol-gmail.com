@@ -55,14 +55,14 @@ variables:
   #   description: netmask of the local ha4-backup interface
   #   default: 255.255.255.255
   #   type_hint: subnet mask
-  # - name: ha4-ethernet-interface
-  #   description: interface configured as an HA interface for the HA4 link
-  #   default: ethernet1/1
-  #   type_hint: ethernet1/1 
-  # - name: ha4-backup-ethernet-interfac
-  #   description: interface configured as an HA interface for the HA4-backup link
-  #   default: ethernet1/2
-  #   type_hint: ethernet1/2
+  - name: ha4_ethernet_interface}
+    description: interface configured as an HA interface for the HA4 link
+    default: ethernet1/1
+    type_hint: ethernet1/1 
+  - name: ha4_backup_ethernet_interface
+    description: interface configured as an HA interface for the HA4-backup link
+    default: ethernet1/2
+    type_hint: ethernet1/2
 # ---------------------------------------------------------------------
 # end of variables section
 
@@ -78,9 +78,9 @@ snippets:
   # - name: cluster-ha4-backup-interface
   #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface/ha4-backup
   #   file: ha4-backup-interface.xml  
-  # - name: ha4-ethernet-interface
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
-  #   file: ha4-ethernet-interface.xml
+  - name: ha4-ethernet-interface
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
+    file: ha4-ethernet-interface.xml
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 # NOTE: The following snippets are auto-generated and ordered automatically.

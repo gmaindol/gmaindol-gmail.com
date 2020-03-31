@@ -1,0 +1,10 @@
+</entry>
+        <entry name="{{ha4_ethernet_interface}}">
+          <link-state>up</link-state>
+          <ha/>
+        </entry>
+</entry>
+        <entry name="{{ha4_backup_ethernet_interface}}">
+          <link-state>up</link-state>
+          <ha/>
+        </entry>
