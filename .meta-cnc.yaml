@@ -47,10 +47,10 @@ variables:
   #   description: netmask of the local HA4 interface
   #   default: 255.255.255.255
   #   type_hint: subnet mask
-  # - name: ha4-backup-ip-address
-  #   description: IPv4/IPv6 Address of the local HA4 backup interface
-  #   default: 255.255.255.255
-  #   type_hint: IPv4/IPv6
+  - name: ha4backupipaddress
+    description: IPv4/IPv6 Address of the local HA4 backup interface
+    default: 255.255.255.255
+    type_hint: IPv4/IPv6
   # - name: ha4-backup-netmask
   #   description: netmask of the local ha4-backup interface
   #   default: 255.255.255.255
