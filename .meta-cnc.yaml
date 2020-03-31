@@ -35,7 +35,7 @@ variables:
   #   description: short helpful Cluster Description
   #   default: ha-cluster
   #   type_hint: short helpful Cluster Description
-  - name: serial-number 
+  - name: device-id
     description: Device Serial Number.
     default: 0000000000
     type_hint: 
