@@ -55,7 +55,7 @@ variables:
   #   description: netmask of the local ha4-backup interface
   #   default: 255.255.255.255
   #   type_hint: subnet mask
-  - name: ha4_ethernet_interface}
+  - name: ha4_ethernet_interface
     description: interface configured as an HA interface for the HA4 link
     default: ethernet1/1
     type_hint: ethernet1/1 
