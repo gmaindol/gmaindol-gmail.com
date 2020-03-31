@@ -1,0 +1,94 @@
+# skillet preamble information used by panhandler
+# ---------------------------------------------------------------------
+# unique snippet name
+name: ha-cofiguration-II
+# label used for menu selection
+label: ha-cofiguration-II
+description: configure firewall for HA clustering
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection:
+    - configure-II
+
+# ---------------------------------------------------------------------
+# end of preamble section
+
+# variables section
+# ---------------------------------------------------------------------
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints examples include text, ip_address, or dropdown
+variables:
+  # - name: cluster-id
+  #   description: unique numeric ID for an HA Cluster
+  #   default: 99
+  #   type_hint: range is 1 to 99
+  # - name: ha-cluster-description
+  #   description: short helpful Cluster Description
+  #   default: ha-cluster
+  #   type_hint: short helpful Cluster Description
+  - name: serial-number 
+    description: Device Serial Number.
+    default: 0000000000
+    type_hint: 
+  - name: ha4-ip-address
+    description: IPv4/IPv6 Address of the local HA4 interface
+    default: 255.255.255.255
+    type_hint: IPv4/IPv6
+  # - name: ha4-netmask
+  #   description: netmask of the local HA4 interface
+  #   default: 255.255.255.255
+  #   type_hint: subnet mask
+  # - name: ha4-backup-ip-address
+  #   description: IPv4/IPv6 Address of the local HA4 backup interface
+  #   default: 255.255.255.255
+  #   type_hint: IPv4/IPv6
+  # - name: ha4-backup-netmask
+  #   description: netmask of the local ha4-backup interface
+  #   default: 255.255.255.255
+  #   type_hint: subnet mask
+  # - name: ha4-ethernet-interface
+  #   description: interface configured as an HA interface for the HA4 link
+  #   default: ethernet1/1
+  #   type_hint: ethernet1/1 
+  # - name: ha4-backup-ethernet-interfac
+  #   description: interface configured as an HA interface for the HA4-backup link
+  #   default: ethernet1/2
+  #   type_hint: ethernet1/2
+# ---------------------------------------------------------------------
+# end of variables section
+
+# snippets section
+# ---------------------------------------------------------------------
+snippets:
+  - name: cluster-members
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster/cluster-members
+    file: cluster-member.xml
+  # - name: cluster-ha4-interface
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface/ha4
+  #   file: ha4-interface.xml  
+  # - name: cluster-ha4-backup-interface
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface/ha4-backup
+  #   file: ha4-backup-interface.xml  
+  # - name: ha4-ethernet-interface
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
+  #   file: ha4-ethernet-interface.xml
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+# NOTE: The following snippets are auto-generated and ordered automatically.
+# Changing the content of the snippet may be necessary, but do NOT change the order
+
+# There is a variable called snippets that we can use to auto-generate this section for us
+
+
+
+# ---------------------------------------------------------------------
+# end of snippets section
