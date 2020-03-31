@@ -1,5 +1,6 @@
-<cluster>
+  <cluster>      
       <enabled>yes</enabled>
       <cluster-id>{{ cluster_id }}</cluster-id>
       <description>{{ ha_cluster_description }}</description>
-      <cluster>
+    <cluster>
+      
