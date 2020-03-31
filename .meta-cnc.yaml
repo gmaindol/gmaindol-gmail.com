@@ -57,7 +57,7 @@ variables:
   #   type_hint: subnet mask
   - name: ha4_ethernet_interface
     description: interface configured as an HA interface for the HA4 link
-    default: ethernet1/1
+    default: ethernet1/2
     type_hint: ethernet1/1 
   - name: ha4_backup_ethernet_interface
     description: interface configured as an HA interface for the HA4-backup link
