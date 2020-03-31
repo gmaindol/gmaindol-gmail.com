@@ -39,7 +39,7 @@ variables:
     description: Device Serial Number.
     default: 0000000000
     type_hint: 
-  - name: ha4-ip-address
+  - name: ha4ipaddress
     description: IPv4/IPv6 Address of the local HA4 interface
     default: 255.255.255.255
     type_hint: IPv4/IPv6
