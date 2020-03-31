@@ -1,3 +1,3 @@
-<entry name="{{ device-id }}">
+<entry name="{{ device }}">
         <ha4-ip-address>{{ha4-ip-address}}</ha4-ip-address>
         <session-synchronization>enabled</session-synchronization>
