@@ -83,9 +83,9 @@ snippets:
   - name: cluster
     xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster
     file: cluster.xml
-  # - name: cluster-ha4-interface
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface/ha4
-  #   file: ha4-interface.xml
+  - name: cluster-ha4-interface
+    xpath: obj="/config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
+    file: ha4-interface.xml
   # - name: cluster-ha4-interface
   #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface/ha4-backup
   #   file: ha4-backup-interface.xml  
