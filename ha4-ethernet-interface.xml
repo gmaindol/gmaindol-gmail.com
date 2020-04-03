@@ -1,5 +1,4 @@
-    <ethernet>
-    <entry name="{{ha4_ethernet_interface}}">
+      <entry name="{{ha4_ethernet_interface}}">
       <link-state>up</link-state>
       <ha/>
     </entry>
@@ -8,4 +7,3 @@
       <link-state>up</link-state>
       <ha/>
     </entry>
-    <ethernet>
