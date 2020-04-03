@@ -77,9 +77,9 @@ variables:
 # snippets section
 # ---------------------------------------------------------------------
 snippets:
-  - name: cluster-members
-    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster/cluster-members
-    file: cluster-member.xml
+  # - name: cluster-members
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster/cluster-members
+  #   file: cluster-member.xml
   - name: cluster
     xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability
     file: cluster.xml
