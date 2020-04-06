@@ -1,9 +1,9 @@
-      <entry name="{{ha4_ethernet_interface}}">
-      <link-state>up</link-state>
-      <ha/>
-    </entry>
-
-<entry name="{{ha4_backup_ethernet_interface}}">
-      <link-state>up</link-state>
-      <ha/>
-    </entry>
+<ethernet>
+        </entry>
+        <entry name="{{ha4_ethernet_interface}}">
+          <ha/>
+        </entry>
+        <entry name="{{ha4_backup_ethernet_interface}}">
+          <ha/>
+        </entry>
+      </ethernet>
