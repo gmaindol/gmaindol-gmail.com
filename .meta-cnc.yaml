@@ -77,12 +77,12 @@ variables:
 # snippets section
 # ---------------------------------------------------------------------
 snippets:
-  - name: cluster-members
-    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster/cluster-members
-    file: cluster-member.xml
-  # - name: cluster
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster
-  #   file: cluster.xml
+  # - name: cluster-members
+  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster/cluster-members
+  #   file: cluster-member.xml
+  - name: cluster
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/cluster
+    file: cluster.xml
   - name: cluster-ha4-interface
     xpath: obj="/config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
     file: ha4-interface.xml
