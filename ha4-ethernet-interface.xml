@@ -5,4 +5,4 @@
         <entry name="{{ha4_backup_ethernet_interface}}">
           <ha/>
         </entry>
-        </ethernet>
+      </ethernet>
