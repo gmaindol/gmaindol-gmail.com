@@ -21,4 +21,4 @@
           <ip-address>{{ ha4backupipaddress }}</ip-address>
           <netmask>{{ ha4backupnetmask }}</netmask>
         </ha4-backup>
-        </interface>
+      </interface>
