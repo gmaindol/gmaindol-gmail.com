@@ -63,8 +63,8 @@ variables:
     description: Cluster-description
     default: HA-Cluster
     type_hint: HA-Cluster
-  - name: ha_cluster_description
-    description: ha_comments
+  - name: ha_comments
+    description: Cluster Comments
     default: Comments
     type_hint: HA-Cluster-1
 # ---------------------------------------------------------------------
