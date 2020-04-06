@@ -1,5 +1,4 @@
 <ethernet>
-        </entry>
         <entry name="{{ha4_ethernet_interface}}">
           <ha/>
         </entry>
