@@ -81,7 +81,7 @@ snippets:
   #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability
   #   file: cluster.xml
   - name: ha4-ethernet-interface
-    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface/ethernet
+    xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
     file: ha4-ethernet-interface.xml
   # - name: cluster-ha4-interface
   #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
