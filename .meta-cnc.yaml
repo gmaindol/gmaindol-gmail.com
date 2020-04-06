@@ -27,14 +27,6 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints examples include text, ip_address, or dropdown
 variables:
-  # - name: cluster_id
-  #   description: unique numeric ID for an HA Cluster
-  #   default: 99
-  #   type_hint: range is 1 to 99
-  # - name: ha_cluster_description
-  #   description: short helpful Cluster Description
-  #   default: ha-cluster
-  #   type_hint: short helpful Cluster Description
   - name: device
     description: Device Serial Number.
     default: 0000000000
@@ -71,6 +63,10 @@ variables:
     description: Cluster-description
     default: HA-Cluster
     type_hint: HA-Cluster
+  - name: ha_cluster_description
+    description: ha_comments
+    default: Comments
+    type_hint: HA-Cluster-1
 # ---------------------------------------------------------------------
 # end of variables section
 

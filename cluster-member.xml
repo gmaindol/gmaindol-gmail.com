@@ -1,5 +1,0 @@
-<entry name="{{ device }}">
-        <ha4-ip-address>{{ha4ipaddress}}</ha4-ip-address>
-        <session-synchronization>enabled</session-synchronization>
-        <ha4-backup-ip-address>{{ha4backupipaddress}}</ha4-backup-ip-address>
-     </entry>
