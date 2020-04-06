@@ -8,3 +8,15 @@
           <ha4-backup-ip-address>{{ ha4backupipaddress }}</ha4-backup-ip-address>
         </entry>
       </cluster-members>
+       <interface>
+        <ha4>
+          <port>{{ha4_ethernet_interface}}</port>
+          <ip-address>{{ ha4ipaddress }}</ip-address>
+          <netmask>{{ ha4netmask }}</netmask>
+        </ha4>
+        <ha4-backup>
+          <port>{{ ha4_backup_ethernet_interface }}</port>
+          <ip-address>{{ ha4backupipaddress }}</ip-address>
+          <netmask>{{ ha4backupnetmask }}</netmask>
+        </ha4-backup>
+      </interface>
