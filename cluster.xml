@@ -1,16 +1,16 @@
 <cluster>
-<enabled>yes</enabled>
-      <cluster-id>{{ cluster_id }}</cluster-id>
-      <description>{{ ha_cluster_description }}</description>
-      <cluster-members>
-        <entry name="{{ device }}">
-          <ha4-ip-address>{{ ha4ipaddress }}</ha4-ip-address>
-          <session-synchronization>enabled</session-synchronization>
-          <ha4-backup-ip-address>{{ ha4backupipaddress }}</ha4-backup-ip-address>
-        </entry>
-      </cluster-members>
+        <enabled>yes</enabled>
+        <cluster-id>{{ cluster_id }}</cluster-id>
+        <description>{{ ha_cluster_description }}</description>
+        <cluster-members>
+          <entry name="{{ device }}">
+            <ha4-ip-address>{{ ha4ipaddress }}</</ha4-ip-address>
+            <session-synchronization>enabled</session-synchronization>
+            <ha4-backup-ip-address>{{ ha4backupipaddress }}</ha4-backup-ip-address>
+          </entry>
+        </cluster-members>
       </cluster>
-       <interface>
+      <interface>
         <ha4>
           <port>{{ha4_ethernet_interface}}</port>
           <ip-address>{{ ha4ipaddress }}</ip-address>
