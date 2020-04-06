@@ -77,18 +77,18 @@ variables:
 # snippets section
 # ---------------------------------------------------------------------
 snippets:
-  # - name: cluster
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability
-  #   file: cluster.xml
+  - name: cluster
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability
+    file: cluster.xml
   - name: ha4-ethernet-interface
     xpath: /config/devices/entry[@name='localhost.localdomain']/network/interface
     file: ha4-ethernet-interface.xml
-  # - name: cluster-ha4-interface
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
-  #   file: ha4-interface.xml
-  # - name: cluster-ha4-backup-interface
-  #   xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
-  #   file: ha4-backup-interface.xml  
+  - name: cluster-ha4-interface
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
+    file: ha4-interface.xml
+  - name: cluster-ha4-backup-interface
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig/high-availability/interface
+    file: ha4-backup-interface.xml  
 
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
