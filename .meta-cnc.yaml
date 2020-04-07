@@ -1,9 +1,9 @@
 # skillet preamble information used by panhandler
 # ---------------------------------------------------------------------
 # unique snippet name
-name: ha-cofiguration-II
+name: HA Cluster 
 # label used for menu selection
-label: ha-cofiguration-II
+label: HA Cluster
 description: configure firewall for HA clustering
 
 # type of device configuration
@@ -16,7 +16,7 @@ extends:
 # grouping of like snippets for dynamic menu creation in panhandler
 labels:
   collection:
-    - configure-II
+    - Cluster
 
 # ---------------------------------------------------------------------
 # end of preamble section
@@ -92,7 +92,6 @@ snippets:
 # Changing the content of the snippet may be necessary, but do NOT change the order
 
 # There is a variable called snippets that we can use to auto-generate this section for us
-
 
 
 # ---------------------------------------------------------------------
